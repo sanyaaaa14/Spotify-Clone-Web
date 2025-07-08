@@ -115,7 +115,7 @@ http://localhost:8000
 
 - HTML5  
 - CSS3 (Flexbox, Utility Classes)  
-- JavaScript (Vanilla)  
+- JavaScript   
 - Local Storage / File-based Playlist Structure
 
 ---
