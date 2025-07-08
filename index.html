@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ======================= META CONFIG ======================= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2"/>
+
+
+    <!-- ======================= FONT AWESOME CDN ======================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- ======================= CUSTOM STYLES ======================= -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+
+  <body>
+    <!-- ======================= NAVIGATION BAR ======================= -->
+    <nav class="nav-bar flex">
+      
+      <!-- ===== LEFT SECTION (Logo + Home + Search) ===== -->
+      <div class="nav-left flex align-items justify-content g-10">
+        <div class="hamburger">
+          <img src="hamburger.svg"  id="menu-icon" class="logo-img" alt="hamburger">
+        </div>
+        <!-- Logo -->
+        <div class="logo">
+          <img src="spotify-logo.png" class="logo-img" alt="logo" />
+        </div>
+
+        <!-- Home Button -->
+        <div class="home">
+          <i class="fas fa-home fa-lg home-logo" style="color: white"></i>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="What do you want to play?" />
+        </div>
+      </div>
+
+      <!-- ===== RIGHT SECTION (Menu + Install + Log In) ===== -->
+      <div class="nav-right flex">
+
+        <!-- Right Menu: Premium, Support, Download -->
+        <ul class="right-side-1 flex align-items">
+          <li>Premium</li>
+          <li>Support</li>
+          <li>Download</li>
+          <div class="vertical-line"></div>
+        </ul>
+
+        <!-- Install App + Sign In -->
+        <ul class="right-side-2 flex align-items">
+          <li class="install-app">
+            <i class="fas fa-download install-icon"></i>
+            <span class="install-text">Install App</span>
+          </li>
+          <button class="Sign-in-btn">Sign In</button>
+        </ul>
+
+        <!-- Log In Button -->
+        <div class="right-side-3">
+          <button class="Log-in-btn">Log In</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======================= MAIN CONTAINER ======================= -->
+    <div class="container flex g-10 m-10">
+      
+      <!-- Left Sidebar -->
+      <div class="left-part ">
+        <div class="library-section flex">
+          <div class="library">Your Library</div>
+          <i class="fa-solid fa-plus plus-icon"></i>
+        </div>
+        <!-- Songs -->
+         <div class="songList">
+          <ul>
+            
+          </ul>
+         </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="footer flex">
+          <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+          <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+          <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+          <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+          <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+          <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="right-part spotifyPlaylist">
+        <h1>Trending Songs</h1>
+        <div class="cardContainer">
+          <!-- <div class="card ">
+            <img src="play.svg" class="playButton" alt="playbutton">
+            <img src="./Card Images/Card-1.jpg" alt="song-card">
+            <h2>Happy Hits!</h2>
+            <p>Hits to boost your mood and fill you with happiness!</p>
+          </div>
+        </div> -->
+        
+        <!-- Playbar -->
+       <div class="playbar">
+        <div class="seekbar">
+          <div class="circle">
+            
+          </div>
+        </div>
+        <div class="abovebar">
+        <div class="songinfo"></div>
+        <div class="songbutton">
+          <img id="previous" src="prevsong.svg" alt="prevsong">
+          <img id="play" src="playsong.svg" alt="playsong">
+          <img id="next" src="nextsong.svg" alt="nextsong">
+        </div>
+        <div class="songtime"></div>
+        </div>
+       </div>
+      </div>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
